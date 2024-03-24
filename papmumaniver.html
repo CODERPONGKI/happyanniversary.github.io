@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parents' Marriage Anniversary</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  /* Custom CSS for the website */
+  body {
+    
+    font-family: Arial, sans-serif;
+    background-image:url("https://wallpapers.com/images/hd/light-pink-floral-iphone-ralldyzuh8796lug.jpg");
+    margin: 0;
+    padding: 0;
+  }
+  .jumbotron {
+    background-color:#e497a2;
+    background-size: cover;
+    font-family:cursive;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 0;
+    
+    border-color: #f8f9fa;
+    animation: heartbeat 1.5s infinite;
+  }
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .jumbotron h1 {
+    font-size: 3.5rem;
+  }
+  
+  .jumbotron h1 {
+    font-size: 3.5rem;
+  }
+  .jumbotron h1 {
+    font-size: 3.5rem;
+    color: #ff1493; /* Deep Pink */
+    animation: colorChange 2s infinite alternate;
+  }
+  @keyframes colorChange {
+    from {
+      color: #ff1493; /* Deep Pink */
+    }
+    to {
+      color:white; /* white */
+    }
+  }
+  .container {
+    padding: 50px 0;
+  }
+  #hi{
+    color: rgb(239, 144, 160);
+    background-color: #ba4056;
+    width:350px;
+    border-color: #f8f9fa;
+    border:2px;
+    
+  }
+  #hi1{
+    background-color:rgb(193, 125, 141);
+    
+  }
+  #hi2{
+    color: rgb(239, 144, 160);
+    background-color: #ba4056;
+  }
+  #marriageYear{
+    background-color: #f9b9c3;
+    
+    border:2px solid white;
+  }
+  #currentYear{
+    background-color: #f9b9c3;
+    border:2px solid white;
+  }
+  .btn{
+    background-color:#851025;
+    color: white;
+  }
+  .card {
+    background-color:#ba4056;
+    
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .quote {
+    font-style: italic;
+    color:#f9b9c3;
+
+    text-align: center;
+    padding: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  .grid-item {
+    background-color: rgb(193, 125, 141);
+    border:2px solid white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .mt-5{
+    color:#f9b9c3;
+    background-color: rgb(190, 67, 96) ;
+    width:300px;
+    padding-left: 3px;
+  }
+  .card01{
+    background-color: rgb(193, 125, 141);
+    border:3px solid white;
+    color:rgb(160, 5, 41);
+    font-weight: bold;
+  }
+  .col-md-4{
+    background-color: #e497a2;
+  }
+#a01{
+    color:rgb(160, 5, 41);
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<!-- Jumbotron Section -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Happy Anniversary, Papa and mum!</h1>
+    
+    <p>Thank you for being the epitome of love and commitment. Here's to many more years of happiness together.</p>
+  
+    <a href="lovelink.html" id="a01">click me~~</a>
+      
+</div>
+</div>
+
+<!-- Main Content Section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2 id="hi">Amoureuse & Amoureux</h2>
+      <p id="hi1">Sending heartfelt wishes on your anniversary to a couple whose love only grows sweeter with time. May your bond continue to be filled with endless love, joy, and cherished moments. Here's to many more years of happiness together
+      
+      </p>
+    </div>
+    
+    <div class="col-md-4">
+      <h2 id="hi2">Years Together</h2>
+      <div class="input-group mb-3">
+        <input type="number" id="marriageYear" class="form-control" placeholder="Year of Marriage" aria-label="Year of Marriage" aria-describedby="basic-addon2">
+      </div>
+      <div class="input-group mb-3">
+        <input type="number" id="currentYear" class="form-control" placeholder="Current Year" aria-label="Current Year" aria-describedby="basic-addon2">
+      </div>
+      <button onclick="calculateYears()" class="btn">Calculate Years Together</button>
+      <div id="yearsTogether" class="mt-3"></div>
+    </div>
+  </div>
+
+  <br>
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="card">
+        <div class="card-body">
+          <p class="quote">"Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="card">
+        <div class="card-body">
+          <p class="quote">"A successful marriage requires falling in love many times, always with the same person."</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="card">
+        <div class="card-body">
+          <p class="quote">"The greatest happiness of life is the conviction that we are loved; loved for ourselves, or rather, loved in spite of ourselves."</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+        <div class="card">
+          <div class="card-body">
+            <p class="quote">"A successful marriage requires falling in love many times, always with the same person."</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <h2 class="mt-5">Dear mum and pap</h2>
+  <div class="card01">
+    <div class="card-body">
+      <p>I hope you both are doing alright .hope you both are happy and healthy. I sent you a postcard a month ago.I dont know why it has not reached you yet but yeah this a small sweet gift for you on your anniversary.hope this finds you in good spirit...love you a lot....</p>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="text-center py-4" style="background-color: #343a40; color: white;">
+  <p>&copy; 2024 Parents' Marriage Anniversary</p>
+</footer>
+
+<!-- Bootstrap and jQuery Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function calculateYears() {
+    const marriageYear = document.getElementById("marriageYear").value;
+    const currentYear = document.getElementById("currentYear").value;
+    const yearsTogether = currentYear - marriageYear;
+    document.getElementById("yearsTogether").innerHTML = "<strong>Years Together:</strong> " + yearsTogether;
+  }
+</script>
+
+</body>
+</html>
+
+
+
+

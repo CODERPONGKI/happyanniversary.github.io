@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Landing Page</title>
+<style>
+  /* Custom CSS for the landing page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(74, 74, 173);
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(194, 194, 241);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #ff1493; /* Deep Pink */
+  }
+  form {
+    text-align: center;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #ff1493; /* Deep Pink */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"]:hover {
+    background-color: #d11576; /* Darker Pink */
+  }
+  .progress-container {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+  }
+  .progress-bar {
+    background-color: #ff1493; /* Deep Pink */
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveProgressBar 5s linear infinite;
+  }
+  .progress-label {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Animation for progress bar */
+  @keyframes moveProgressBar {
+    0% { width: 0%; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+  }
+
+  /* Animated stripes */
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+    animation: moveStripes 1s linear infinite;
+  }
+
+  /* Animation for stripes */
+  @keyframes moveStripes {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 0; }
+  }
+  button{
+    color:white;
+    background-color:#ff1493;
+    width:50px;
+    height: 30px;
+    border:2px solid white;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Let's Show your Love Story</h1>
+  <form>
+    <input type="text" placeholder="Her Name">
+    <input type="text" placeholder="His Name">
+    <button><a href="papmumaniver.html">Us</a></button>
+  </form>
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="progress-label">Love</div>
+
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="progress-label">Commitment</div>
+
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="progress-label">Dedication</div>
+</div>
+
+</body>
+</html>
+
+
+

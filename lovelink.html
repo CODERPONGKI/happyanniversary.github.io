@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Love Website</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcgzC-vxvd71aNJ6Jmtx4htSpz2_0adL14w&usqp=CAU'); /* Path to your love gif */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.message {
+    color: rgb(243, 2, 131);
+    font-size:x-large;
+    font-weight:bolder;
+    margin-bottom: 20px;
+}
+
+.peck-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff5e62;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    animation: pulse 1.5s infinite alternate; /* Pulsating animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .message {
+        font-size: 2em;
+    }
+    .peck-btn {
+        font-size: 1em;
+    }
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="message">I love you</h1>
+        <button class="peck-btn"><a href="https://youtube.com/shorts/06G2wHsZiJ0?si=QkpB2VyWE_1l2zIP">Peck me</a></button>
+    </div>
+</body>
+</html>
